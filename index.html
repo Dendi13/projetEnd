@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>WALLET</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="text">WALLET</div>
+        <div class="container">
+            <div class="block1">
+                <div class="name1">Диаграмма расходов</div>
+                <div class="diagrame">
+
+                </div>
+                <div class="legend">
+                    <ul class="legend__list">
+                        <li class="legend__item">
+                            <div class="legend__sum">
+                                <div class="shar first"></div>
+                                <span class="legend__desc">Продукты</span>
+                            </div>
+                            <span class="legend__price" id="legend__price">0₽</span>
+                        </li>
+                        <li class="legend__item">
+                            <div class="legend__sum">
+                                <div class="shar second"></div>
+                                <span class="legend__desc">ФастФуд</span>
+                            </div>
+                            <span class="legend__price" id="legend__price">0₽</span>
+                        </li>
+                        <li class="legend__item">
+                            <div class="legend__sum">
+                                <div class="shar third"></div>
+                                <span class="legend__desc">Спорт</span>
+                            </div>
+                            <span class="legend__price" id="legend__price">0₽</span>
+                        </li>
+                        <li class="legend__item">
+                            <div class="legend__sum">
+                                <div class="shar fourth"></div>
+                                <span class="legend__desc">Напитки</span>
+                            </div>
+                            <span class="legend__price" id="legend__price">0₽</span>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="block2">
+                <div class="block2__list">
+                    <div class="table">
+                        <div class="str">Товар</div>
+                        <div class="str">Категория</div>
+                        <div class="str">Цена</div>
+                    </div>
+                    <ul class="toList" id="toList"></ul>
+                </div>
+            </div>
+            <div class="block3">
+                <div class="list">
+                    <div class="name2">
+                        <div class="title">Товар:</div>
+                        <input type="text" placeholder="Наименование" class="input__list" id="input__list">
+                        <div class="line"></div>
+                    </div>
+                    <div class="name2">
+                        <div class="title">Цена:</div>
+                        <input type="text" placeholder="руб" class="input__list" id="input__price">
+                    </div>
+                    <div class="name2">
+                        <div class="title">Категория:</div>
+                        <select name="select" class="select" id="select__category">
+                            <option value="Продукты">Продукты</option>
+                            <option value="ФастФуд">ФастФуд</option>
+                            <option value="Спорт">Спорт</option>
+                            <option value="Напитки">Напитки</option>
+                        </select>
+                        <button class="myBtn" id="myBtn">Добавить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
